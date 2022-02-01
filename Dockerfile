@@ -8,6 +8,6 @@ RUN  curl -o ./fastcfs.sh https://raw.githubusercontent.com/happyfish100/FastCFS
     && ./fastcfs.sh install || exit 1
 
 COPY shell/start.sh start.sh
-COPY conf/fastcfs/ /
+COPY conf/ /
 RUN chmod +x ./start.sh
 CMD ./start.sh
